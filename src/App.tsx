@@ -104,7 +104,7 @@ export class App extends Component<{}, AppState> {
             <>
                 <GlobalStyle />
                 <Wrapp>
-                    <Carousel showArrows={true} showThumbs={false} onChange={this.onChange} selectedItem={selectedItem}>
+                    <Carousel infiniteLoop={true} showArrows={true} showThumbs={false} onChange={this.onChange} selectedItem={selectedItem}>
                         {currencies.map((item) => (
                             <div key={item.baseCurrency}>
                                 <img src={item.imgUrl} alt={item.baseCurrency} />
